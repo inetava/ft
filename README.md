@@ -9,5 +9,9 @@ The number of prime numbers randomly.
 **build**
 `docker build -t ft:latest .`
 
-**run**
-`docker run --name ft -d -p 80:5000 --rm ft:latest`
+## Docker
+**run as daemon**
+`docker run --name ft -d -p 80:5000 --rm inetava/ft:latest`
+
+**run in terminal**
+`docker run --name ft -it -p 80:5000 --rm inetava/ft:latest`
