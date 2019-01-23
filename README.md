@@ -7,7 +7,7 @@ The number of prime numbers randomly.
 *python 3, flask 1.0*
 
 **build**
-`docker build -t ft:latest`
+`docker build -t ft:latest .`
 
 **run**
 `docker run --name ft -d -p 80:5000 --rm ft:latest`
