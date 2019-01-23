@@ -23,12 +23,9 @@ def tf(n):
     return (f, t)
 
 
-start_time = time.time()
-
-
 @app.route("/")
 def index():
-    number = random.randint(1000, 50000)
+    number = random.randint(app.config["NMIN"], app.config["NMAX"])
     res = tf(number)
     context = {"number": number, "pn": res[0], "time": res[1]}
     return render_template("base.html", title=context["time"], context=context)

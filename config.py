@@ -2,4 +2,5 @@ import os
 
 
 class Config(object):
-    SECRET_KEY = os.environ.get("SECRET_KEY") or "you-will-never-guess"
+    NMIN = int(os.environ.get("NMIN")) or 1000
+    NMAX = int(os.environ.get("NMAX")) or 50000
