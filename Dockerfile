@@ -15,7 +15,7 @@ RUN chmod +x start.sh
 ENV FLASK_APP ft.py
 ENV GWORKERS 4
 ENV NMIN 1000
-ENV NMAX 50000
+ENV NMAX 25000
 
 RUN chown -R ft:ft ./
 USER ft
